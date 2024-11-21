@@ -1,0 +1,4 @@
+C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\OOP\SpaceInvader\x64\Debug\SpaceInvader.exe
+C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\OOP\SpaceInvader\x64\Debug\SpaceInvader.vcxproj.CopyComplete
+C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\OOP\SpaceInvader\x64\Debug\raylib.dll
+C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\OOP\SpaceInvader\x64\Debug\glfw3.dll

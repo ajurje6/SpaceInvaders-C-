@@ -1,0 +1,7 @@
+﻿  spaceship.cpp
+C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\OOP\SpaceInvader\spaceship.cpp(6,50): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\OOP\SpaceInvader\spaceship.cpp(7,51): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\OOP\SpaceInvader\spaceship.cpp(21,53): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  SpaceInvader.vcxproj -> C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\OOP\SpaceInvader\x64\Debug\SpaceInvader.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
