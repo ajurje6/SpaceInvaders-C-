@@ -3,7 +3,7 @@
 #include "game.hpp"
 using namespace std;
 int main() {
-	// Define a light green color
+	// Defining a light green color
 	Color lightGreen = { 144, 238, 144, 255 }; // RGB for light green
 	//Window dimensions
 	int widthOfWindow = 1080;
@@ -16,6 +16,7 @@ int main() {
 	//GameLoop
 	while (WindowShouldClose() == false) {
 		game.HandleInput();
+		game.Update();
 		BeginDrawing();
 		ClearBackground(lightGreen);
 		game.Draw();
