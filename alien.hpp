@@ -10,5 +10,6 @@ class Alien {
 		void DrawAlien();
 		void UpdateAlien(int direction);
 		int GetTypeOfAlien();
+		Rectangle getRect();
 	private:
 };

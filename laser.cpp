@@ -14,8 +14,18 @@ void Laser::DrawLaser() {
 void Laser::UpdateLaser() {
 	position.y += speed;
 	if (IsActive) {
-		if (position.y > GetScreenHeight() || position.y < 0) {
+		if (position.y > GetScreenHeight() -75 || position.y < 10) {
 			IsActive = false;
 		}
 	}
+}
+
+Rectangle Laser::getRect()
+{
+    Rectangle rect;
+	rect.x = position.x;
+	rect.y = position.y;
+	rect.width = 5;
+	rect.height = 15;
+	return rect;
 }

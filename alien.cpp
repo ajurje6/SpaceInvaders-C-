@@ -28,6 +28,15 @@ Alien::Alien(int typeOfAlien, Vector2 position) {
 	 return typeOfAlien;
  }
 
+ Rectangle Alien::getRect()
+ {
+	 // Creates and returns a Rectangle that represents aliens position and dimension
+	 return { position.x, position.y,
+	   float(alienImages[typeOfAlien - 1].width),
+	   float(alienImages[typeOfAlien - 1].height)
+	 };
+ }
+
  void Alien::UnloadImages()
  {
 	 for (int i = 0; i < 2; i++) {

@@ -6,6 +6,7 @@ public:
 	void DrawLaser();
 	void UpdateLaser();
 	bool IsActive;
+	Rectangle getRect();
 private:
 	Vector2 position;
 	int speed;
