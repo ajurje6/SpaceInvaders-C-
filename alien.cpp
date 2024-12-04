@@ -1,24 +1,30 @@
 #include "alien.hpp"
+#include <iostream>
 Texture2D Alien::alienImages[3] = {};
 Alien::Alien(int typeOfAlien, Vector2 position) {
-	this->typeOfAlien = typeOfAlien;
-	this->position = position;
-	if (alienImages[typeOfAlien - 1].id == 0) {
-		switch (typeOfAlien) {
-		case 1:
-			alienImages[0] = LoadTexture("Graphics/alien_1.png");
-			break;
-		case 2:
-			alienImages[1] = LoadTexture("Graphics/alien_2.png");
-			break;
-		case 3:
-			alienImages[2] = LoadTexture("Graphics/alien_3.png");
-			break;
-		default:
-			alienImages[0] = LoadTexture("Graphics/alien_1.png");
-			break;
-		}
-	}
+    this->typeOfAlien = typeOfAlien;
+    this->position = position;
+    if (alienImages[typeOfAlien - 1].id == 0) {
+        switch (typeOfAlien) {
+        case 1:
+            alienImages[0] = LoadTexture("Graphics/alien_1.png");
+            break;
+        case 2:
+            alienImages[1] = LoadTexture("Graphics/alien_2.png");
+            break;
+        case 3:
+            alienImages[2] = LoadTexture("Graphics/alien_3.png");
+            break;
+        default:
+            alienImages[0] = LoadTexture("Graphics/alien_1.png");
+            break;
+        }
+
+        // Check if the texture loaded successfully
+        if (alienImages[typeOfAlien - 1].id == 0) {
+            std::cerr << "Error loading alien texture for type " << typeOfAlien << std::endl;
+        }
+    }
 }
  void Alien::DrawAlien() {
 	DrawTextureV(alienImages[typeOfAlien-1], position, BLACK);

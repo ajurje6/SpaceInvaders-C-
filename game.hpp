@@ -14,6 +14,9 @@ class Game {
     int score;
     bool isRunning;
     Music music;
+    void Restart();
+    bool IsAllAliensDefeated();
+    void GameInitialization();
     private:
         void DeleteDeactivatedLasers();
         std::vector<Obstacle> CreateObstacles();
@@ -23,8 +26,6 @@ class Game {
         void AlienFire();
         void CheckCollision();
         void GameOver();
-        void Restart();
-        void GameInitialization();
         Spaceship spaceship;
         std::vector<Obstacle> obstacles;
         std::vector<Alien> aliens;

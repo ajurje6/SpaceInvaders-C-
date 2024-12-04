@@ -1,8 +1,12 @@
 #include "spaceship.hpp"
-
+#include <iostream>
 Spaceship::Spaceship()
 {
     image = LoadTexture("./Graphics/spaceship.png");
+    // Checks if the texture loaded successfully
+    if (image.id == 0) {
+        std::cerr << "Error loading spaceship texture!" << std::endl;
+    }
     // Initialize the spaceship's position to be centered horizontally and at the bottom of the screen vertically
     position.x = (GetScreenWidth() - image.width)/2;
     position.y = GetScreenHeight() - image.height - 75;

@@ -133,12 +133,12 @@ void Game::MoveAliens() {
     for (auto& alien : aliens) {
         //Ensures that aliens change direction when they reach end of the screen
         if (alien.position.x + alien.alienImages[alien.typeOfAlien - 1].width > GetScreenWidth()-10) {
-            aliensDirection = -2;
-            DropAliensDown(7);
+            aliensDirection = -3;
+            DropAliensDown(8);
         }
         if (alien.position.x < 10) {
-            aliensDirection = 2;
-            DropAliensDown(7);
+            aliensDirection = 3;
+            DropAliensDown(8);
         }
 
         alien.UpdateAlien(aliensDirection);
@@ -275,11 +275,15 @@ void Game::Restart()
     obstacles.clear();
 }
 
+bool Game::IsAllAliensDefeated() {
+    return isRunning && aliens.empty();  // Game is not running, and aliens are defeated
+}
+
 void Game::GameInitialization()
 {
     obstacles = CreateObstacles();
     aliens = CreateAliens();
-    aliensDirection = 2;
+    aliensDirection = 3;
     lives = 3;
     score = 0;
     isRunning = true;

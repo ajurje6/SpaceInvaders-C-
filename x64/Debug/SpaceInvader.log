@@ -1,6 +1,0 @@
-﻿  main.cpp
-C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\SpaceInvader\game.hpp(33,55): warning C4305: 'initializing': truncation from 'double' to 'const float'
-C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\SpaceInvader\main.cpp(8,48): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  SpaceInvader.vcxproj -> C:\Users\Antonio\OneDrive\Radna površina\Nuclear Launch Codes\SpaceInvader\x64\Debug\SpaceInvader.exe
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
